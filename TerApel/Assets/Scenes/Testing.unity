@@ -8540,7 +8540,7 @@ Transform:
   m_GameObject: {fileID: 1132035886}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.877, y: 0.27750003, z: 7.002}
+  m_LocalPosition: {x: 0.5, y: 0.27750003, z: 6.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11196,7 +11196,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.5000012, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.5913391, y: 0.43607125, z: 8.269321}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -16305,7 +16305,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6199973837475924900, guid: 03363bf476696af44a6b5a5d1229f0a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6097573
+      value: 0.20923361
       objectReference: {fileID: 0}
     - target: {fileID: 6199973837475924900, guid: 03363bf476696af44a6b5a5d1229f0a5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16313,7 +16313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199973837475924900, guid: 03363bf476696af44a6b5a5d1229f0a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.266846
+      value: 8.764999
       objectReference: {fileID: 0}
     - target: {fileID: 6199973837475924900, guid: 03363bf476696af44a6b5a5d1229f0a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20738,6 +20738,6 @@ SceneRoots:
   - {fileID: 1947187448}
   - {fileID: 441087506}
   - {fileID: 1254141272}
-  - {fileID: 1132035887}
   - {fileID: 818609604}
+  - {fileID: 1132035887}
   - {fileID: 1824998739}
