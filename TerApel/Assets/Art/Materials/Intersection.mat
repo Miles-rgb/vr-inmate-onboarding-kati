@@ -134,7 +134,7 @@ Material:
     - _ZWriteControl: 0
     - _intersectionDepth: 0.9
     - _stripeOffset: 0
-    - _stripeRotation: 45
+    - _stripeRotation: 50
     - _stripeSize: 6
     - _stripeThickness: 0.5
     m_Colors:
