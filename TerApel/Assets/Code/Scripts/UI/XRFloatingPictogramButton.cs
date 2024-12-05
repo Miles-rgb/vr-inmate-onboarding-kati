@@ -5,42 +5,42 @@ using UnityImage = UnityEngine.UI.Image;
 
 public class XRFloatingPictogramButton : MonoBehaviour
 {
-    private Camera _camera;
+    private Camera mainCamera;
 
     [Header("Pictogram Settings")]
-    [SerializeField] private GameObject _imageObject;
-    private RectTransform _rectTransform;
-    private UnityImage _imageRenderer;
+    [SerializeField] private GameObject imageObject;
+    private RectTransform rectTransform;
+    private UnityImage imageRenderer;
 
-    [SerializeField] private Sprite _defaultSprite;
-    private Vector2 _defaultSpriteSize;
-    [SerializeField] private Sprite _pictogramSprite;
-    [SerializeField] private float _resetDistance = 5f;
+    [SerializeField] private Sprite defaultSprite;
+    private Vector2 defaultSpriteSize;
+    [SerializeField] private Sprite pictogramSprite;
+    [SerializeField] private float resetDistance = 5f;
 
     [Header("Scaling")]
-    [SerializeField] private float _scaleSpeed = 1f;
-    [SerializeField] private float _scaleShrinkAmount = 2f;
-    [SerializeField] private float _scaleExpandAmount = 2f;
+    [SerializeField] private float scaleSpeed = 1f;
+    [SerializeField] private float scaleShrinkAmount = 2f;
+    [SerializeField] private float scaleExpandAmount = 2f;
 
     private enum ButtonState { Idle, Shrinking, Expanding, Selected }
-    private ButtonState _currentState;
+    private ButtonState currentState;
 
     private void Awake()
     {
-        _camera = Camera.main;
+        mainCamera = Camera.main;
 
-        _rectTransform = _imageObject.GetComponent<RectTransform>();
-        _imageRenderer = _imageObject.GetComponentInChildren<UnityImage>();
+        rectTransform = imageObject.GetComponent<RectTransform>();
+        imageRenderer = imageObject.GetComponentInChildren<UnityImage>();
 
-        _imageRenderer.sprite = _defaultSprite;
-        _defaultSpriteSize = _rectTransform.sizeDelta;
+        imageRenderer.sprite = defaultSprite;
+        defaultSpriteSize = rectTransform.sizeDelta;
 
-        _currentState = ButtonState.Idle; // Start in Idle state
+        currentState = ButtonState.Idle; // Start in Idle state
     }
 
     private void LateUpdate()
     {
-        Vector3 cameraPosition = _camera.transform.position;
+        Vector3 cameraPosition = mainCamera.transform.position;
         transform.LookAt(new Vector3(cameraPosition.x, transform.position.y, cameraPosition.z)); // Face camera, lock Y axis
 
         float distanceToCamera = Vector3.Distance(transform.position, cameraPosition);
@@ -50,33 +50,33 @@ public class XRFloatingPictogramButton : MonoBehaviour
 
     private void HandleStateTransitions(float distanceToCamera)
     {
-        switch (_currentState)
+        switch (currentState)
         {
             case ButtonState.Idle:
-                if (distanceToCamera < _resetDistance)
+                if (distanceToCamera < resetDistance)
                 {
-                    _currentState = ButtonState.Expanding;
+                    currentState = ButtonState.Expanding;
                 }
                 break;
 
             case ButtonState.Shrinking:
-                if (distanceToCamera < _resetDistance)
+                if (distanceToCamera < resetDistance)
                 {
-                    _currentState = ButtonState.Expanding;
+                    currentState = ButtonState.Expanding;
                 }
                 break;
 
             case ButtonState.Expanding:
-                if (distanceToCamera >= _resetDistance)
+                if (distanceToCamera >= resetDistance)
                 {
-                    _currentState = ButtonState.Shrinking;
+                    currentState = ButtonState.Shrinking;
                 }
                 break;
 
             case ButtonState.Selected:
-                if (distanceToCamera >= _resetDistance)
+                if (distanceToCamera >= resetDistance)
                 {
-                    _currentState = ButtonState.Shrinking;
+                    currentState = ButtonState.Shrinking;
                 }
                 break;
         }
@@ -84,41 +84,41 @@ public class XRFloatingPictogramButton : MonoBehaviour
 
     private void ExecuteStateLogic()
     {
-        switch (_currentState)
+        switch (currentState)
         {
             case ButtonState.Idle:
-                SmoothResize(_defaultSpriteSize / _scaleShrinkAmount);
+                SmoothResize(defaultSpriteSize / scaleShrinkAmount);
                 break;
 
             case ButtonState.Shrinking:
-                _imageRenderer.sprite = _defaultSprite;
-                SmoothResize(_defaultSpriteSize / _scaleShrinkAmount);
+                imageRenderer.sprite = defaultSprite;
+                SmoothResize(defaultSpriteSize / scaleShrinkAmount);
                 break;
 
             case ButtonState.Expanding:
-                SmoothResize(_defaultSpriteSize);
+                SmoothResize(defaultSpriteSize);
                 break;
 
             case ButtonState.Selected:
-                SmoothResize(_defaultSpriteSize * _scaleExpandAmount);
+                SmoothResize(defaultSpriteSize * scaleExpandAmount);
                 break;
         }
     }
 
     private void SmoothResize(Vector2 targetSize)
     {
-        if (Mathf.Abs((_rectTransform.sizeDelta - targetSize).magnitude) > 0.01f)
+        if (Mathf.Abs((rectTransform.sizeDelta - targetSize).magnitude) > 0.01f)
         {
-            _rectTransform.sizeDelta = Vector2.Lerp(_rectTransform.sizeDelta, targetSize, Time.deltaTime * _scaleSpeed);
+            rectTransform.sizeDelta = Vector2.Lerp(rectTransform.sizeDelta, targetSize, Time.deltaTime * scaleSpeed);
         }
     }
 
     public void UpdateSprite()
     {
-        if (_imageRenderer.sprite != _pictogramSprite)
+        if (imageRenderer.sprite != pictogramSprite)
         {
-            _imageRenderer.sprite = _pictogramSprite;
-            _currentState = ButtonState.Selected;
+            imageRenderer.sprite = pictogramSprite;
+            currentState = ButtonState.Selected;
         }
     }
 }

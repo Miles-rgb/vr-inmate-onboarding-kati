@@ -299,10 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16c8f561da2bae4084a36fe4b4802b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _imageObject: {fileID: 8369601203186362547}
-  _defaultSprite: {fileID: 21300000, guid: 9fe4f9eb838ecb4419917ae68007ca2d, type: 3}
-  _pictogramSprite: {fileID: 21300000, guid: b398f58ecc9d0ac4c8de2c6e007b5c95, type: 3}
-  _resetDistance: 4
-  _scaleSpeed: 1
-  _scaleShrinkAmount: 2
-  _scaleExpandAmount: 2
+  imageObject: {fileID: 8369601203186362547}
+  defaultSprite: {fileID: 21300000, guid: 9fe4f9eb838ecb4419917ae68007ca2d, type: 3}
+  pictogramSprite: {fileID: 0}
+  resetDistance: 4
+  scaleSpeed: 1
+  scaleShrinkAmount: 2
+  scaleExpandAmount: 2
