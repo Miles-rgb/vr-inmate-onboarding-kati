@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using Splines;
 
 public class SplineControl : MonoBehaviour
 {
@@ -13,11 +12,5 @@ public class SplineControl : MonoBehaviour
     public static void HandleTrigger(GameObject triggeredObject)
     {
         Debug.Log("triggered tag Player");
-        SecondTrigger();
-    }
-
-    public void SecondTrigger()
-    {
-        Sphere.GetComponent<SplineAnimate>() = false;
     }
 }

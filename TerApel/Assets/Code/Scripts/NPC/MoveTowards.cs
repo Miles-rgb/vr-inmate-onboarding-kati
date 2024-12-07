@@ -4,30 +4,28 @@ using UnityEngine;
 
 public class MoveTowards : MonoBehaviour
 {
-    public GameObject Sphere;
-    public GameObject Cube;
-    public GameObject Cube2;
+    public GameObject NPC;
+    public GameObject SplineG1;
+    public GameObject SplineG2;
     public float speed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        Sphere.transform.position = Vector3.MoveTowards(Sphere.transform.position, Cube.transform.position, speed);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Waypoint")
+        NPC.transform.position = Vector3.MoveTowards(NPC.transform.position, SplineG1.transform.position, speed);
+        NPC.transform.rotation = SplineG1.transform.rotation;
+        // Check if the colliding object has a specific tag or component
+        if (other.gameObject.CompareTag("Player"))
         {
-            //Destroy(Cube);
-            Destroy (Cube.gameObject.GetComponent<Collider>());
-            Sphere.transform.position = Vector3.MoveTowards(Sphere.transform.position, Cube2.transform.position, speed);
-            Debug.Log("works");
+            SplineG1.SetActive(true);
+        }
+    }
+
+    private void Spline2Active()
+    {
+        {
+            SplineG2.SetActive(true);
+            NPC.transform.position = Vector3.MoveTowards(NPC.transform.position, SplineG2.transform.position, speed);
+            NPC.transform.rotation = SplineG2.transform.rotation;
         }
     }
 }
