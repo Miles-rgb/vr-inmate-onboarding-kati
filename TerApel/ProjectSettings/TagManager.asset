@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - InfoPoint
+  - NPC
   layers:
   - Default
   - TransparentFX
