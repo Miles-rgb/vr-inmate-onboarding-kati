@@ -120,5 +120,10 @@ public class XRFloatingPictogramButton : MonoBehaviour
             imageRenderer.sprite = pictogramSprite;
             currentState = ButtonState.Selected;
         }
+        else
+        {
+            imageRenderer.sprite = defaultSprite;
+            currentState = ButtonState.Expanding;
+        }
     }
 }
