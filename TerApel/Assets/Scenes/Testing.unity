@@ -23502,7 +23502,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 64, y: 1, z: 9e-44, w: 0}
+  m_BoundingSphereOverride: {x: 9.1835e-41, y: 2.0387514e-38, z: 4.5697343e-37, w: 7.468284e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -26315,8 +26315,6 @@ MonoBehaviour:
   settingsPanel: {fileID: 1123506293}
   controlsPanel: {fileID: 1134062751}
   scenesPanel: {fileID: 786571056}
-  playerHead: {fileID: 0}
-  menuDistance: 2
   pauseAction: {fileID: 5346581901388843814, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &2053900862
 GameObject:
