@@ -452,6 +452,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "MenuVR",
+                    "type": "Button",
+                    "id": "fae8173d-e6f3-41b3-91a3-b4743564f51f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -694,6 +703,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thumbstick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58a4a57f-b437-4781-9a32-5aac3d26e526",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuVR",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
