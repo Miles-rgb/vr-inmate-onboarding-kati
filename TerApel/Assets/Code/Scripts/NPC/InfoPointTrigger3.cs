@@ -6,6 +6,7 @@ public class InfoPointTrigger3 : MonoBehaviour
 {
     public GameObject Spline;
     public GameObject InfoP3;
+    public Animator guardAnimator;
 
     private void OnTriggerStay(Collider other)
     {
@@ -13,6 +14,7 @@ public class InfoPointTrigger3 : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Spline.SetActive(true);
+            guardAnimator.SetTrigger("Walk");
         }
     }
 
@@ -21,14 +23,9 @@ public class InfoPointTrigger3 : MonoBehaviour
         if (other.gameObject.CompareTag("NPC"))
         {
             Spline.SetActive(false);
+            guardAnimator.SetTrigger("Idle");
+            Debug.Log("SplineOff");
         }        
     }
 
-    private void OnTriggerExit (Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            InfoP3.SetActive(false);
-        }
-    }
 }

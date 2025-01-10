@@ -6,6 +6,7 @@ public class InfoPointTrigger1 : MonoBehaviour
 {
     public GameObject Spline;
     public GameObject InfoP1;
+    public Animator guardAnimator;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +14,7 @@ public class InfoPointTrigger1 : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Spline.SetActive(true);
+            guardAnimator.SetTrigger("Walk");
         }
     }
 
