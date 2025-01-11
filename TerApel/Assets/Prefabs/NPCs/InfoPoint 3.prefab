@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4075620572092130896}
   - component: {fileID: 5680902062216979537}
   - component: {fileID: 7704444879992501543}
-  - component: {fileID: 2114892486470941908}
+  - component: {fileID: 7354490364045041583}
   m_Layer: 0
   m_Name: InfoPoint 3
   m_TagString: InfoPoint
@@ -108,7 +108,7 @@ CapsuleCollider:
   m_Height: 4.3958755
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &2114892486470941908
+--- !u!114 &7354490364045041583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,8 +117,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6523406213931503744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38f0d7bceef0be40bc2f920ddbbcc7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 89250f7521703ae4d86b119842e3143b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Spline: {fileID: 0}
-  InfoP2: {fileID: 6523406213931503744}
+  InfoP3: {fileID: 6523406213931503744}
+  guardAnimator: {fileID: 0}

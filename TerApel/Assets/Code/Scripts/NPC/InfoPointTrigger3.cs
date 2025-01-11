@@ -16,16 +16,13 @@ public class InfoPointTrigger3 : MonoBehaviour
             Spline.SetActive(true);
             guardAnimator.SetTrigger("Walk");
         }
-    }
 
-    void OnTriggerEnter(Collider other)
-    {
+        else guardAnimator.SetTrigger("Stop");
+
         if (other.gameObject.CompareTag("NPC"))
         {
             Spline.SetActive(false);
-            guardAnimator.SetTrigger("Idle");
-            Debug.Log("SplineOff");
-        }        
+            guardAnimator.SetTrigger("Stop");
+        }
     }
-
 }
