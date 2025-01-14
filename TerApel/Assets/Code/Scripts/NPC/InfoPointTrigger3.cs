@@ -17,7 +17,7 @@ public class InfoPointTrigger3 : MonoBehaviour
             guardAnimator.SetTrigger("Walk");
         }
 
-        else guardAnimator.SetTrigger("Stop");
+        //else guardAnimator.SetTrigger("Stop");
 
         if (other.gameObject.CompareTag("NPC"))
         {
