@@ -2351,7 +2351,7 @@ PrefabInstance:
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 555e52f0a4b292c4a8e2a333d9b545dc, type: 3}
+      objectReference: {fileID: 32900000, guid: 098ced0df3ef66b4688d1804b8f592b1, type: 3}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_ControlledAudioTrackCount
       value: 1
@@ -5564,7 +5564,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.7208e-41, y: 3.4e-44, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: 1.1020419e-38, y: 1.1020423e-38, z: 1.1020419e-38, w: 1.0836752e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
