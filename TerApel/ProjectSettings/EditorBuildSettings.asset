@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Workshop.unity
     guid: 9a45430874c4f974a8b09f192e0f67b7
+  - enabled: 1
+    path: Assets/Scenes/Sewing Machine Tutorial.unity
+    guid: 52bbb90cb4c3dc84487a66045f7bff74
   - enabled: 0
     path: Assets/Scenes/Testing.unity
     guid: b2fb5f51fe040374285241decfe63fb0
