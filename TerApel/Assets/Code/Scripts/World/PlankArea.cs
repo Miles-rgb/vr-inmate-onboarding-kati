@@ -6,6 +6,7 @@ public class PlankArea : MonoBehaviour
 {
     private GameObject plank;
     [SerializeField] private GameObject halfPlank;
+    private bool plankThere;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Plank"))
@@ -18,8 +19,8 @@ public class PlankArea : MonoBehaviour
 
     public bool CountPlank()
     {
-        bool plank = true;
-        Debug.Log("plank is: " + plank);
+        plankThere = true;
+        Debug.Log("plank is: " + plankThere);
         return plank;
         
     }
@@ -30,6 +31,7 @@ public class PlankArea : MonoBehaviour
         {
             Vector3 plankTransform = new Vector3(plank.transform.position.x, plank.transform.position.y, plank.transform.position.z);
             Destroy(plank);
+            plankThere = false;
             Instantiate(halfPlank, new Vector3(plankTransform.x, plankTransform.y, plankTransform.z), plank.transform.rotation);
             Instantiate(halfPlank, new Vector3(plankTransform.x, plankTransform.y, plankTransform.z - 0.5f), plank.transform.rotation);
         }
