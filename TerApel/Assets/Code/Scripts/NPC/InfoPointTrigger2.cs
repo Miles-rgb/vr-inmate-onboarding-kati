@@ -7,25 +7,9 @@ public class InfoPointTrigger2 : MonoBehaviour
     public GameObject Spline;
     public GameObject InfoP2;
     public Animator guardAnimator;
+    public GameObject Player;
 
-    private void OnTriggerStay(Collider other)
-    {
-        // Check if the colliding object has a specific tag or component
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Spline.SetActive(true);
-            guardAnimator.SetTrigger("Walk");
-        }
-    }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("NPC"))
-        {
-            Spline.SetActive(false);
-            guardAnimator.SetTrigger("Idle");
-        }        
-    }
 
     private void OnTriggerExit (Collider other)
     {
@@ -33,5 +17,7 @@ public class InfoPointTrigger2 : MonoBehaviour
         {
             InfoP2.SetActive(false);
         }
+
+        else Spline.SetActive(false);
     }
 }
