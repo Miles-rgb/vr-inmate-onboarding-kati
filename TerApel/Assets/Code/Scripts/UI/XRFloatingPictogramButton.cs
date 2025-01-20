@@ -13,6 +13,7 @@ public class XRFloatingPictogramButton : MonoBehaviour
     private UnityImage imageRenderer;
 
     [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private Color defaultSpriteColor = new Color(255, 255, 255);
     private Vector2 defaultSpriteSize;
     [SerializeField] private Sprite pictogramSprite;
     [SerializeField] private float resetDistance = 5f;
@@ -33,6 +34,7 @@ public class XRFloatingPictogramButton : MonoBehaviour
         imageRenderer = imageObject.GetComponentInChildren<UnityImage>();
 
         imageRenderer.sprite = defaultSprite;
+        imageRenderer.color = defaultSpriteColor;
         defaultSpriteSize = rectTransform.sizeDelta;
 
         currentState = ButtonState.Idle; // Start in Idle state
@@ -92,6 +94,7 @@ public class XRFloatingPictogramButton : MonoBehaviour
 
             case ButtonState.Shrinking:
                 imageRenderer.sprite = defaultSprite;
+                imageRenderer.color = defaultSpriteColor;
                 SmoothResize(defaultSpriteSize / scaleShrinkAmount);
                 break;
 
@@ -118,7 +121,14 @@ public class XRFloatingPictogramButton : MonoBehaviour
         if (imageRenderer.sprite != pictogramSprite)
         {
             imageRenderer.sprite = pictogramSprite;
+            imageRenderer.color = new Color(255,255,255,255);
             currentState = ButtonState.Selected;
+        }
+        else
+        {
+            imageRenderer.sprite = defaultSprite;
+            imageRenderer.color = defaultSpriteColor;
+            currentState = ButtonState.Expanding;
         }
     }
 }
