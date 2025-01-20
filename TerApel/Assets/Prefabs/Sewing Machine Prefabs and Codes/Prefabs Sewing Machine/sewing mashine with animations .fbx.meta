@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: ac54f7ff1ea56954b8cd9702deff2438
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      74: 5997529446667923351
+    second: Peddal|button switch
+  - first:
+      74: -7626583232008854994
+    second: Peddal|Cylinder.010Action
+  - first:
+      74: -8910528984782204287
+    second: Peddal|fabric movement
+  - first:
+      74: 1099169031442355994
+    second: 'Peddal|grey lost movement '
+  - first:
+      74: -919031417496349068
+    second: Peddal|Peddal Animation
+  - first:
+      74: -7584718674135634806
+    second: Peddal|sewing part lifting up
+  - first:
+      74: 8384814330964703631
+    second: Peddal|sewing part lifting up.001
+  - first:
+      74: -3605761180453145096
+    second: Peddal|sewing part starting
+  - first:
+      74: -9007475256790462592
+    second: Peddal|sewing part starting to sew
+  - first:
+      74: 1118059079119644549
+    second: Peddal|Spinning parts
+  - first:
+      74: -3228964881853505424
+    second: Peddal|yarn animation
+  - first:
+      74: -2777595152496849863
+    second: Needel Big Part|button switch
+  - first:
+      74: -817367566294439894
+    second: Needel Big Part|Cylinder.010Action
+  - first:
+      74: 1860320912123016898
+    second: Needel Big Part|fabric movement
+  - first:
+      74: 1960763274147152496
+    second: 'Needel Big Part|grey lost movement '
+  - first:
+      74: 1427918433876985044
+    second: Needel Big Part|Peddal Animation
+  - first:
+      74: -8325786744594634657
+    second: Needel Big Part|sewing part lifting up
+  - first:
+      74: 2878523268338936729
+    second: Needel Big Part|sewing part lifting up.001
+  - first:
+      74: 8813270830588680345
+    second: Needel Big Part|sewing part starting
+  - first:
+      74: 7397273270374974180
+    second: Needel Big Part|sewing part starting to sew
+  - first:
+      74: -9052852324240633786
+    second: Needel Big Part|Spinning parts
+  - first:
+      74: 5858294623465629184
+    second: Needel Big Part|yarn animation
+  - first:
+      74: 3784257540675902302
+    second: Button switch|button switch
+  - first:
+      74: -4264733767656115322
+    second: Button switch|Cylinder.010Action
+  - first:
+      74: 6940946640084761167
+    second: Button switch|fabric movement
+  - first:
+      74: -8407132103566556643
+    second: 'Button switch|grey lost movement '
+  - first:
+      74: 7750295021247542238
+    second: Button switch|Peddal Animation
+  - first:
+      74: 8654129462248077748
+    second: Button switch|sewing part lifting up
+  - first:
+      74: 5547865753608612921
+    second: Button switch|sewing part lifting up.001
+  - first:
+      74: 506171067851196114
+    second: Button switch|sewing part starting
+  - first:
+      74: 5900270233104164935
+    second: Button switch|sewing part starting to sew
+  - first:
+      74: 7883606730305342156
+    second: Button switch|Spinning parts
+  - first:
+      74: 3298867674713400083
+    second: Button switch|yarn animation
+  - first:
+      74: -6883640884797971750
+    second: Needle|button switch
+  - first:
+      74: -5969101179259243905
+    second: Needle|Cylinder.010Action
+  - first:
+      74: 3592721767956319340
+    second: Needle|fabric movement
+  - first:
+      74: -2081129295307939195
+    second: 'Needle|grey lost movement '
+  - first:
+      74: 5863235500730740501
+    second: Needle|Peddal Animation
+  - first:
+      74: 8088376194479254890
+    second: Needle|sewing part lifting up
+  - first:
+      74: -1325397030436941895
+    second: Needle|sewing part lifting up.001
+  - first:
+      74: -4449763784906640664
+    second: Needle|sewing part starting
+  - first:
+      74: -4457332187026535784
+    second: Needle|sewing part starting to sew
+  - first:
+      74: -1720086140316229414
+    second: Needle|Spinning parts
+  - first:
+      74: 5667523957542007051
+    second: Needle|yarn animation
+  - first:
+      74: -7043622636209742618
+    second: Grey Lost|button switch
+  - first:
+      74: -8320516148260072914
+    second: Grey Lost|Cylinder.010Action
+  - first:
+      74: -2412242859443758952
+    second: Grey Lost|fabric movement
+  - first:
+      74: -8684197093688248466
+    second: 'Grey Lost|grey lost movement '
+  - first:
+      74: 6866465812538470747
+    second: Grey Lost|Peddal Animation
+  - first:
+      74: 5589020120939588432
+    second: Grey Lost|sewing part lifting up
+  - first:
+      74: -4452282064359146834
+    second: Grey Lost|sewing part lifting up.001
+  - first:
+      74: -1382167305845531842
+    second: Grey Lost|sewing part starting
+  - first:
+      74: 9179946894027421708
+    second: Grey Lost|sewing part starting to sew
+  - first:
+      74: 1967725284911680187
+    second: Grey Lost|Spinning parts
+  - first:
+      74: 2991915276596867024
+    second: Grey Lost|yarn animation
+  - first:
+      74: -7160981256060808625
+    second: yarn|button switch
+  - first:
+      74: -6406832445633143370
+    second: yarn|Cylinder.010Action
+  - first:
+      74: 2396775271983072099
+    second: yarn|fabric movement
+  - first:
+      74: -5755325779557895484
+    second: 'yarn|grey lost movement '
+  - first:
+      74: -5241623358770241570
+    second: yarn|Peddal Animation
+  - first:
+      74: -8606967347094555091
+    second: yarn|sewing part lifting up
+  - first:
+      74: 127580776843967193
+    second: yarn|sewing part lifting up.001
+  - first:
+      74: 5037104273469776258
+    second: yarn|sewing part starting
+  - first:
+      74: -2277983896563120931
+    second: yarn|sewing part starting to sew
+  - first:
+      74: -1810120213852679381
+    second: yarn|Spinning parts
+  - first:
+      74: -970127684708795656
+    second: yarn|yarn animation
+  - first:
+      74: 126781967499630904
+    second: Fabric|button switch
+  - first:
+      74: -8080971747290879832
+    second: Fabric|Cylinder.010Action
+  - first:
+      74: 8249907400602908789
+    second: Fabric|fabric movement
+  - first:
+      74: -536550258969192536
+    second: Fabric|grey lost movement
+  - first:
+      74: -3060829390011035086
+    second: Fabric|Peddal Animation
+  - first:
+      74: -3404574413592987573
+    second: Fabric|sewing part lifting up
+  - first:
+      74: 3915625270452798613
+    second: Fabric|sewing part lifting up.001
+  - first:
+      74: -6186940113598993760
+    second: Fabric|sewing part starting
+  - first:
+      74: 717191982232178374
+    second: Fabric|sewing part starting to sew
+  - first:
+      74: -5196840593916700983
+    second: Fabric|Spinning parts
+  - first:
+      74: -3176751020317687459
+    second: Fabric|yarn animation
+  - first:
+      74: -2323618379140558155
+    second: Sewing Mashine.006|button switch
+  - first:
+      74: 2850366157192038327
+    second: Sewing Mashine.006|Cylinder.010Action
+  - first:
+      74: -3666637142181297269
+    second: Sewing Mashine.006|fabric movement
+  - first:
+      74: -479117617077903032
+    second: 'Sewing Mashine.006|grey lost movement '
+  - first:
+      74: 3649215434724394683
+    second: Sewing Mashine.006|Peddal Animation
+  - first:
+      74: -3629854425346381306
+    second: Sewing Mashine.006|sewing part lifting up
+  - first:
+      74: 2531078906444727751
+    second: Sewing Mashine.006|sewing part lifting up.001
+  - first:
+      74: -340982475014067594
+    second: Sewing Mashine.006|sewing part starting
+  - first:
+      74: -2986494400640642220
+    second: Sewing Mashine.006|sewing part starting to sew
+  - first:
+      74: -788957083175861824
+    second: Sewing Mashine.006|Spinning parts
+  - first:
+      74: 8267650735890973900
+    second: Sewing Mashine.006|yarn animation
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Peddal|Cylinder.010Action
+      takeName: Peddal|Cylinder.010Action
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Peddal|fabric movement
+      takeName: Peddal|fabric movement
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 298
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 'Peddal|grey lost movement '
+      takeName: 'Peddal|grey lost movement '
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Peddal|Peddal Animation
+      takeName: Peddal|Peddal Animation
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Needel Big Part|sewing part starting to sew
+      takeName: Needel Big Part|sewing part starting to sew
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 118
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Button switch|button switch
+      takeName: Button switch|button switch
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Needle|sewing part starting
+      takeName: Needle|sewing part starting
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 143
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 'Grey Lost|grey lost movement '
+      takeName: 'Grey Lost|grey lost movement '
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: yarn|yarn animation
+      takeName: yarn|yarn animation
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 246
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fabric|fabric movement
+      takeName: Fabric|fabric movement
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 298
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
