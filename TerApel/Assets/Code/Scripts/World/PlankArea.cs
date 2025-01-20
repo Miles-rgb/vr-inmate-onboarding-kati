@@ -28,9 +28,10 @@ public class PlankArea : MonoBehaviour
     {
         if (CountPlank())
         {
-            Transform plankTransform = plank.transform;
+            Vector3 plankTransform = new Vector3(plank.transform.position.x, plank.transform.position.y, plank.transform.position.z);
             Destroy(plank);
-            Instantiate(halfPlank, plankTransform.position, plankTransform.rotation);
+            Instantiate(halfPlank, new Vector3(plankTransform.x, plankTransform.y, plankTransform.z), plank.transform.rotation);
+            Instantiate(halfPlank, new Vector3(plankTransform.x, plankTransform.y, plankTransform.z - 0.5f), plank.transform.rotation);
         }
         
     }
