@@ -27,7 +27,7 @@ public class MoveTowards : MonoBehaviour
             Spline.SetActive(true);
         }
 
-        else
+        else if (Vector3.Distance(transform.position, Player.transform.position) > 7f)
         {
             if (isWalking) // Only trigger idle animation if walking
             {
@@ -36,5 +36,15 @@ public class MoveTowards : MonoBehaviour
             }
             Spline.SetActive(false);
         }
+
+        //else
+        //{
+        //    if (isWalking) // Only trigger idle animation if walking
+        //    {
+        //        guardAnimator.SetBool("IsWalking", false);
+        //        isWalking = false;
+        //    }
+        //    Spline.SetActive(false);
+        //}
     }
 }
